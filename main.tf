@@ -1,10 +1,3 @@
-# Configure the AWS Provider
-provider "aws" {
-  source  = "hashicorp/aws"
-  region = "us-east-1"
-}
-
-
 provider "aws" {
   version = "~> 3.0"
 
