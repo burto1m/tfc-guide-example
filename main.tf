@@ -1,5 +1,12 @@
+# Configure the AWS Provider
 provider "aws" {
-  version = "3.22.0"
+  source  = "hashicorp/aws"
+  region = "us-east-1"
+}
+
+
+provider "aws" {
+  version = "~> 3.0"
 
   region = var.aws_region
 }
