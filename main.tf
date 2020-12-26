@@ -15,6 +15,7 @@ resource "aws_dynamodb_table" "tfc_example_table" {
 
   read_capacity  = var.db_read_capacity
   write_capacity = var.db_write_capacity
+  point_in_time_recovery = "enabled"
   hash_key       = "UUID"
 
   attribute {
